@@ -2,10 +2,124 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>我的个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #fcfbf7;
+            color: #333;
+            line-height: 1.6;
+        }
+        /* 顶部 Header */
+        header {
+            background-color: #1e4970;
+            color: white;
+            padding: 40px 10%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            color: #1e4970;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .header-info h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .header-info p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        /* 主体内容 */
+        main {
+            padding: 40px 10%;
+            max-width: 1000px;
+        }
+        .section-title {
+            font-size: 22px;
+            color: #1e4970;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: #1e4970;
+        }
+        .bio {
+            margin-bottom: 25px;
+            font-size: 15px;
+            color: #555;
+        }
+        /* 标签 */
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .tag {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #1e4970;
+        }
+    </style>
 </head>
-<body style="text-align: center; padding-top: 50px; font-family: sans-serif;">
-    <h1>你好，这是我的个人主页！</h1>
-    <p>我的第一个网页已经在 GitHub + Vercel 上成功发布了！</p>
+<body>
+
+    <!-- 顶部个人信息卡片 -->
+    <header>
+        <div class="avatar">主页</div>
+        <div class="header-info">
+            <h1>我的个人主页</h1>
+            <p>大学生 · 数据与代码爱好者</p>
+        </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main>
+        <h2 class="section-title">简介</h2>
+        <p class="bio">
+            你好！欢迎来到我的个人主页。这是我在 GitHub 和 Vercel 上部署的第一份网页作品。
+        </p>
+        <p class="bio">
+            我热衷于学习新知识，并尝试通过编程与数据分析将想法转化为实际项目。
+        </p>
+
+        <!-- 标签列表 -->
+        <div class="tags">
+            <span class="tag">GitHub</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">网页制作</span>
+            <span class="tag">数据分析</span>
+        </div>
+
+        <h2 class="section-title">课程项目</h2>
+        <p class="bio">项目内容正在建设中...</p>
+    </main>
+
 </body>
 </html>
